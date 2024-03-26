@@ -1,0 +1,31 @@
+/* fonts.css */
+@font-face {
+  font-family: 'productsans-regular';
+  src: url('../../Fonts/c4.ttf') format('truetype');
+
+}
+
+
+@font-face {
+  font-family: 'productsans-bold';
+  src: url('../../Fonts/c2.ttf') format('truetype');
+
+}
+
+
+/* fonts.css */
+
+@font-face {
+  font-family: 'ambit-regular';
+  src: url('../../Fonts/aregular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ambit-bold';
+  src: url('../../Fonts/abold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ambit-extrabold';
+  src: url('../../Fonts/ablack.otf') format('opentype');
+}

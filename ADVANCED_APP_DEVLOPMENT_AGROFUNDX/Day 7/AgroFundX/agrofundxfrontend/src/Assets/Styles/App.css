@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
+  width: 5px;
+}
+
+.dash::-webkit-scrollbar {
+    display: none;
+
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: ambit-regular;
+  /* background-color: #18332f; */
+background-color: #f9f9f9;
+}
+/* .mapscale:hover {
+  -webkit-filter: none;
+  filter: none;
+} */
+.mapscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+
+.wavy {
+  position: relative;
+  /* -webkit-box-reflect:below -12px linear-gradient(transparent,rgba(0,0,0,.2)); */
+}
+.wavy:hover span {
+  position: relative;
+  display: inline-block;
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,
+  100% {
+    transform: translateY(0px);
+  }
+}
+.hover-effect
+{
+  cursor: pointer;
+
+}
+
+
+.hover-effect::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #8ba17f;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.hover-effect:hover::after
+{
+  content: '';
+height: 2px;
+width: 100%;
+background-color: #8ba17f;
+display: block;
+}
